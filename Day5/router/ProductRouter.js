@@ -24,7 +24,7 @@ const getAllProductHandler = async function (req,res){
             if(order=="inc"){
                 queryResProm = queryResProm.sort(sortParam); 
             }else{
-                queryResProm = queryResProm.sort(-sortParam);
+                queryResProm = queryResProm.sort("-"+sortParam);
             }
         }
         if(selectQuery){
